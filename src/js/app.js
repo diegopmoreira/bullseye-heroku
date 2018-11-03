@@ -129,6 +129,8 @@ app.post('/nexttargets', (req, res) => {
       res.send("Target Acquired");
     } else if (actualPrice < stop) {
       res.send("Stop Acquired");
+    }else {
+      res.send("Something went wrong");
     }
   });
   
